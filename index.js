@@ -55,6 +55,8 @@ Toast.showLongTop = message => showToast(message, 'long', 'top');
 Toast.showLongCenter = message => showToast(message, 'long', 'center');
 Toast.showLongBottom = message => showToast(message, 'long', 'bottom');
 
+Toast.showWithOptions = options => showWithOptions(options);
+
 Toast.show = function (message) {
   showToast(message, 'short', 'bottom');
 };
