@@ -5,7 +5,7 @@ A android like toast for react-native support for ios and android
 ```sh
 npm install @remobile/react-native-toast --save
 ```
-or 
+or
 ```sh
 yarn add @remobile/react-native-toast
 ```
@@ -22,6 +22,9 @@ yarn add @remobile/react-native-toast
 ```
 
 ### Installation (Android)
+
+* In `android/settings.gradle`
+
 ```gradle
 ...
 include ':react-native-toast'
