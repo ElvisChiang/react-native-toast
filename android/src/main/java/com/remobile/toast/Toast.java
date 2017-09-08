@@ -27,7 +27,6 @@ public class Toast extends ReactContextBaseJavaModule implements LifecycleEventL
             return;
         }
 
-
         final String message = options.getString("message");
         final String duration = options.getString("duration");
         final String position = options.getString("position");

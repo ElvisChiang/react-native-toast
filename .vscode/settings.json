@@ -1,0 +1,21 @@
+{
+    "react-native": {
+        "packager": {
+            "port": 8081
+        }
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.idea": true,
+        "**/ios/build": true,
+        "**/ios/Pods": true,
+        "**/android/build": true,
+        "**/android/app/build": true
+    },
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [150],
+    "editor.cursorBlinking": "solid",
+    "javascript.validate.enable": false,
+    "prettier.singleQuote": true
+}
