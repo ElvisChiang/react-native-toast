@@ -28,7 +28,7 @@ yarn add @remobile/react-native-toast
 ```gradle
 ...
 include ':react-native-toast'
-project(':react-native-toast').projectDir = new File(settingsDir, '../node_modules/@remobile/react-native-toast/android')
+project(':react-native-toast').projectDir = new File(rootProject.projectDir, '../node_modules/@remobile/react-native-toast/android')
 ```
 
 * In `android/app/build.gradle`
