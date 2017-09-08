@@ -57,12 +57,7 @@ Toast.showLongBottom = message => showToast(message, 'long', 'bottom');
 
 Toast.showWithOptions = options => showWithOptions(options);
 
-Toast.show = function (message) {
-  showToast(message, 'short', 'bottom');
-};
-
-Toast.hide = function () {
-  RCTToast.hide();
-};
+Toast.show = message => showToast(message, 'short', 'bottom');
+Toast.hide = () => RCTToast.hide();
 
 module.exports = Toast;

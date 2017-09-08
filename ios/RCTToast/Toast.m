@@ -21,12 +21,12 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)options) {
     NSString *duration = [options objectForKey:@"duration"];
     NSString *position = [options objectForKey:@"position"];
     NSNumber *addPixelsY = [options objectForKey:@"addPixelsY"];
-    
+
     if (![position isEqual: @"top"] && ![position isEqual: @"center"] && ![position isEqual: @"bottom"]) {
         RCTLogError(@"invalid position. valid options are 'top', 'center' and 'bottom'");
         return;
     }
-    
+
     NSInteger durationInt;
     if ([duration isEqual: @"short"]) {
         durationInt = 2;
@@ -36,7 +36,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)options) {
         RCTLogError(@"invalid duration. valid options are 'short' and 'long'");
         return;
     }
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
         [[[[UIApplication sharedApplication]windows]firstObject] makeToast:message duration:durationInt position:position addPixelsY:addPixelsY == nil ? 0 : [addPixelsY intValue]];
     });
